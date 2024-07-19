@@ -1,0 +1,46 @@
+/* styles for UsersList.js file  */
+.users-list-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+    border:1px solid
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.users-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.users-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.users-table tr:hover {
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+    .users-table {
+        overflow-x: auto;
+    }
+
+    .users-table th, .users-table td {
+        white-space: nowrap;
+    }
+}
